@@ -1,0 +1,41 @@
+17:00:02.202 [main] INFO  test.Day2 - Testing is started
+17:00:10.220 [main] DEBUG test.Day2 - setBaseURL is completed
+17:00:11.329 [main] DEBUG test.Day2 - Error message is displayed when email address is not provided
+17:00:11.617 [main] DEBUG test.Day2 - screenHomeEmailSubscriptiong is completed
+17:00:12.613 [main] INFO  test.Day2 - Printing all the Steps to become Partner
+17:00:12.613 [main] INFO  test.Day2 - ------------------------------------------
+17:00:12.643 [main] INFO  test.Day2 - 1. Determine if your organization has enough points (see Eligibility Grid) and which Partner level you are entitled
+17:00:12.656 [main] INFO  test.Day2 - 2. Download the ISTQB® Partner Program Application/Renewal Form from the ISTQB.org website
+17:00:12.669 [main] INFO  test.Day2 - 3. Complete the form and email it to cstb@cstb.ca
+17:00:12.680 [main] INFO  test.Day2 - 4. Once approval for the ISTQB® Partner Program is confirmed, the CSTB will issue an invoice to the Partner candidate
+17:00:12.692 [main] INFO  test.Day2 - 5. Once payment is received, the CSTB issues the ISTQB® Partner Program certificate and announces the partnership on the CSTB website
+17:00:12.692 [main] INFO  test.Day2 - Printing all the Program Rules: 
+17:00:12.692 [main] INFO  test.Day2 - ------------------------------------------
+17:00:12.719 [main] INFO  test.Day2 - Eligibility Points and Thresholds (opens in new window)
+17:00:12.731 [main] INFO  test.Day2 - Partnership Points (opens in new window)
+17:00:12.743 [main] INFO  test.Day2 - Partner Fees (opens in new window)
+17:00:12.756 [main] INFO  test.Day2 - Validity (opens in new window)
+17:00:12.769 [main] INFO  test.Day2 - Calculation Examples (opens in new window)
+17:00:12.781 [main] INFO  test.Day2 - Download of ISTQB® Partner Program Documents (opens in new window)
+17:00:12.781 [main] DEBUG test.Day2 - screenPartnerProgramGuidelines is completed
+17:00:14.008 [main] INFO  test.Day2 - Partners are: https://bmm.com/ and http://gescollege.ca/
+17:00:14.008 [main] DEBUG test.Day2 - screenPartnerProgramPartnerInCanada is completed
+17:00:19.114 [main] DEBUG test.Day2 - [Ljava.lang.String;@19058533 has opened and matched with given URL
+17:00:20.346 [main] DEBUG test.Day2 - [Ljava.lang.String;@64fc097e has opened and matched with given URL
+17:00:21.593 [main] DEBUG test.Day2 - [Ljava.lang.String;@73a19967 has opened and matched with given URL
+17:00:22.910 [main] DEBUG test.Day2 - [Ljava.lang.String;@736309a9 has opened and matched with given URL
+17:00:24.347 [main] DEBUG test.Day2 - [Ljava.lang.String;@7bca6fac has opened and matched with given URL
+17:00:25.547 [main] DEBUG test.Day2 - [Ljava.lang.String;@6d7cada5 has opened and matched with given URL
+17:00:25.579 [main] DEBUG test.Day2 - screenPartnerProgramProgramRulesLink is completed
+17:00:26.526 [main] INFO  test.Day2 - Checking Training Providers List: 
+17:00:26.553 [main] INFO  test.Day2 - 1. ALPI
+17:00:27.817 [main] INFO  test.Day2 - 2. COVEROS (Formerly SQE TRAINING)
+17:00:28.913 [main] INFO  test.Day2 - 3. imbus Canada Corporation
+17:00:30.045 [main] INFO  test.Day2 - 4. Learning Tree International
+17:00:31.158 [main] INFO  test.Day2 - 5. Rex Black Consulting Services (RBCS)
+17:00:32.344 [main] INFO  test.Day2 - 6. TESSCO Sas
+17:00:33.460 [main] DEBUG test.Day2 - screenTrainingProviders is completed
+17:00:35.670 [main] DEBUG test.Day2 - verifyCertifiedTestersTab is completed
+17:00:36.647 [main] DEBUG test.Day2 - verifyPartnerProgramTab is completed
+17:00:37.452 [main] DEBUG test.Day2 - verifyTrainingProvidersTab is completed
+17:00:37.523 [main] DEBUG test.Day2 - Window is closed
