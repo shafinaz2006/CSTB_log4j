@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="SuiteCSTB">
+  <test thread-count="5" name="VerifyTestCSTB">     <!-- test.Day1 -- verify.* methods -->
+    <classes>
+      <class name="test.Day1">
+      <methods>
+               <include name="verify.*" />
+       </methods>	
+       </class>
+    </classes>
+  </test> 
+  
+  <test thread-count="5" name="ScreenTestCSTB">    <!-- test.Day2 -- screen.* methods -->
+    <classes>
+      <class name="test.Day2">
+      <methods>
+               <include name="screen.*" />
+       </methods>	
+       </class>
+    </classes>
+  </test> 
+  
+</suite> <!-- SuiteCSTB -->
