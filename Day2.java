@@ -111,7 +111,7 @@ public class Day2 {
 	@Test
 	public void screenPartnerProgramGuidelines() {
 
-    	driver.manage().timeouts().implicitlyWait(6, TimeUnit.SECONDS);
+    		driver.manage().timeouts().implicitlyWait(6, TimeUnit.SECONDS);
 
 		Actions action = new Actions(driver);
 
@@ -155,7 +155,7 @@ public class Day2 {
 	@Test 
 	public void screenPartnerProgramProgramRulesLink() {
 		
-    	driver.manage().timeouts().implicitlyWait(6, TimeUnit.SECONDS);
+    		driver.manage().timeouts().implicitlyWait(6, TimeUnit.SECONDS);
 
 		Actions action = new Actions(driver);
 
@@ -216,7 +216,7 @@ public class Day2 {
 	@Test 
 	public void screenPartnerProgramPartnerInCanada() {
 		
-    	driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+    		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 
 		Actions action = new Actions(driver);
 
@@ -238,7 +238,7 @@ public class Day2 {
 	@Test 
 	public void screenTrainingProviders() {
 		
-    	driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+    		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		
 		driver.findElement(By.xpath("//a[contains(text(), 'ISTQB® Training Providers')]")).click();
 	    
