@@ -88,19 +88,17 @@ public class Day2 {
 
 	@Test
 	public void screenPartnerProgramGuidelines() {
-    driver.manage().timeouts().implicitlyWait(6, TimeUnit.SECONDS);
+    		driver.manage().timeouts().implicitlyWait(6, TimeUnit.SECONDS);
 		Actions action = new Actions(driver);
 		action.moveToElement(driver.findElement(By.xpath("//li[contains(@id, 'menu-item')]//a[contains(text(), 'ISTQB® Partner Program')]"))).perform();
 		driver.findElement(By.xpath("//ul[@class = 'sub-menu']//a[contains(text(), 'ISTQB® Partner Program Guidelines')]")).click();
 		//checking all the steps to become partner:
-
 		log.info("Printing all the Steps to become Partner");
 		log.info("------------------------------------------");
-
 		List<WebElement> stepsToPartnerList = 
-      driver.findElements(By.xpath("//div[@class = 'courses-listing clearfix']/following-sibling::ol//li"));
+      				driver.findElements(By.xpath("//div[@class = 'courses-listing clearfix']/following-sibling::ol//li"));
 
-    int j;
+    		int j;
 		for(int i = 0; i < stepsToPartnerList.size(); i++) {
 			j = i + 1;
 			log.info(j + ". " + stepsToPartnerList.get(i).getText());
@@ -121,12 +119,11 @@ public class Day2 {
 
 	@Test 
 	public void screenPartnerProgramProgramRulesLink() {
-    driver.manage().timeouts().implicitlyWait(6, TimeUnit.SECONDS);
+    	driver.manage().timeouts().implicitlyWait(6, TimeUnit.SECONDS);
 		Actions action = new Actions(driver);
 		action.moveToElement(driver.findElement(By.xpath("//li[contains(@id, 'menu-item')]//a[contains(text(), 'ISTQB® Partner Program')]"))).perform();
 		driver.findElement(By.xpath("//ul[@class = 'sub-menu']//a[contains(text(), 'ISTQB® Partner Program Guidelines')]")).click();
 		List<WebElement> progRulesLinks = driver.findElements(By.xpath("//p[contains(a, 'how the program works')]/following-sibling::ul//li//a"));
- 
 		String[] givenUrl;
 		Set<String> winHandle;
 		Iterator<String>;
@@ -160,7 +157,7 @@ public class Day2 {
 
 	@Test 
 	public void screenPartnerProgramPartnerInCanada() {
-    driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+    	driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		Actions action = new Actions(driver);
 		action.moveToElement(driver.findElement(By.xpath("//li[contains(@id, 'menu-item')]//a[contains(text(), 'ISTQB® Partner Program')]"))).perform();
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);  
@@ -176,35 +173,35 @@ public class Day2 {
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		driver.findElement(By.xpath("//a[contains(text(), 'ISTQB® Training Providers')]")).click();
 		log.info("Checking Training Providers List: ");
-	  List<WebElement> trainingProviderList = driver.findElements(By.xpath("//p[contains(text(), 'training provider')]//following-sibling::ul//li//a"));
+	  	List<WebElement> trainingProviderList = driver.findElements(By.xpath("//p[contains(text(), 'training provider')]//following-sibling::ul//li//a"));
 		int j;
-    for (int i = 0; i < trainingProviderList.size(); i++) {
-      j = i + 1;
-      log.info(j + ". " + trainingProviderList.get(i).getText());
-      trainingProviderList.get(i).click();
-      driver.navigate().back();
-      driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-      trainingProviderList = driver.findElements(By.xpath("//p[contains(text(), 'training provider')]//following-sibling::ul//li//a"));
-    }
-	  log.debug("screenTrainingProviders is completed");
+	        for (int i = 0; i < trainingProviderList.size(); i++) {
+	          j = i + 1;
+	          log.info(j + ". " + trainingProviderList.get(i).getText());
+	          trainingProviderList.get(i).click();
+	          driver.navigate().back();
+	          driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+	          trainingProviderList = driver.findElements(By.xpath("//p[contains(text(), 'training provider')]//following-sibling::ul//li//a"));
+	       }
+	       log.debug("screenTrainingProviders is completed");
 	}
 
 	@Test(dataProvider = "getData")
 	private void screenHomeEmailSubscriptiong(String email, String fName, String lName) {
-    driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+    	driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		driver.findElement(By.xpath("//a[contains(text(), 'Home')]")).click();
 		driver.findElement(By.xpath("//input[@value = 'Subscribe']")).click();
-	  Boolean errMsg = driver.findElement(By.xpath("//div[@for = 'mce-EMAIL']")).isDisplayed();
-    if(errMsg) {
-      log.debug("Error message is displayed when email address is not provided");
-    }  
-    else {
-      log.error("Error message is not displayed when email address is not provided");
-    }
-    driver.findElement(By.xpath("//input[@name = 'EMAIL']")).sendKeys(email);
-    driver.findElement(By.xpath("//input[@name = 'FNAME']")).sendKeys(fName);
-    driver.findElement(By.xpath("//input[@name = 'LNAME']")).sendKeys(lName);
-    log.debug("screenHomeEmailSubscriptiong is completed");
+	  	Boolean errMsg = driver.findElement(By.xpath("//div[@for = 'mce-EMAIL']")).isDisplayed();
+	    	if(errMsg) {
+	      		log.debug("Error message is displayed when email address is not provided");
+	    	}  
+	    	else {
+	      		log.error("Error message is not displayed when email address is not provided");
+	    	}
+    		driver.findElement(By.xpath("//input[@name = 'EMAIL']")).sendKeys(email);
+    		driver.findElement(By.xpath("//input[@name = 'FNAME']")).sendKeys(fName);
+    		driver.findElement(By.xpath("//input[@name = 'LNAME']")).sendKeys(lName);
+    		log.debug("screenHomeEmailSubscriptiong is completed");
 	}
 
 	@AfterTest 
